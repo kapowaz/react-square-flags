@@ -1,0 +1,21 @@
+{
+  "extends": ["@kapowaz/eslint-config"],
+  "overrides": [
+    {
+      "files": ["babel.config.js", "webpack.config.js", "src/tools/**/*.js"],
+      "rules": {
+        "@typescript-eslint/no-var-requires": "off",
+        "import/no-extraneous-dependencies": "off"
+      }
+    },
+    {
+      "files": ["src/**/*.stories.tsx"],
+      "rules": {
+        "sort-exports/sort-exports": "off"
+      }
+    }
+  ],
+  "rules": {
+    "sort-exports/sort-exports": "off"
+  }
+}
