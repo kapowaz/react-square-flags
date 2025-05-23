@@ -46,7 +46,7 @@
     "build": "yarn clean && yarn build:ts && yarn build:js",
     "build:ts": "tsc -p ./tsconfig.build.json",
     "build:js": "rollup -c rollup.config.ts --configPlugin esbuild",
-    "build:publish": "yarn lint && yarn test && yarn test:playwright && yarn build && npm publish --tag beta",
+    "build:publish": "yarn lint && yarn test && yarn test:playwright && yarn build && npm publish",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
