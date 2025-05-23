@@ -1,0 +1,11 @@
+{{#each componentNames}}
+import { {{this}} } from './{{this}}';
+{{/each}}
+
+export {
+{{#each componentNames}}
+  {{this}},
+{{/each}}
+};
+
+export * from './allFlags';
