@@ -1,5 +1,6 @@
 import { render, screen } from '@testing-library/react';
-import { SQUAREFLAGSIZE_DIMENSIONS, SquareFlag } from './SquareFlag';
+import { SquareFlag } from './SquareFlag';
+import { SQUAREFLAGSIZE_DIMENSIONS } from '../common';
 import { CountryFlagEU } from '../flags/countries/CountryFlagEU';
 
 describe('SquareFlag', () => {

@@ -1,5 +1,6 @@
 import type { Property as CSSProperty } from 'csstype';
 import type { SVGComponent, SquareFlagSize } from '../../types';
+import { SQUAREFLAGSIZE_DIMENSIONS } from '../common';
 
 export interface ISquareFlagProps
   extends React.ComponentPropsWithoutRef<'svg'> {
@@ -13,14 +14,6 @@ export interface ISquareFlagProps
    */
   size?: SquareFlagSize | CSSProperty.Height;
 }
-
-export const SQUAREFLAGSIZE_DIMENSIONS: Record<SquareFlagSize, number> = {
-  tiny: 12,
-  small: 18,
-  medium: 24,
-  large: 36,
-  xlarge: 48,
-};
 
 const isSquareFlagSize = (size: string): size is SquareFlagSize => {
   return Object.keys(SQUAREFLAGSIZE_DIMENSIONS).includes(size);
