@@ -1,0 +1,8 @@
+import type { SVGComponent } from '../../../types';
+
+export const {{ name }}: SVGComponent = ({ title = '{{ title }}', ...props }) => (
+  <svg viewBox="{{ viewBox }}" role="img" {...props}>
+    {title && <title>{title}</title>}
+    {{{svgData}}}
+  </svg>
+);

@@ -1,0 +1,8 @@
+import type { SVGComponent } from '../../../types';
+
+export const CountryFlagMR: SVGComponent = ({ title = 'Mauritania', ...props }) => (
+  <svg viewBox="0 0 512 512" role="img" {...props}>
+    {title && <title>{title}</title>}
+    <path fill="var(--flag-palette-dark-green, #496e2d)" d="M0 0h512v512H0z"/><path fill="var(--flag-palette-yellow, #ffda44)" d="M256 295.8a89 89 0 0 1-87-70q-2 9.2-2 19a89 89 0 1 0 176-19 89 89 0 0 1-87 70"/><path fill="var(--flag-palette-yellow, #ffda44)" d="m256 178 8.3 25.6H291l-21.7 15.8 8.3 25.5L256 229l-21.7 16 8.3-25.5-21.7-15.8h26.8z"/>
+  </svg>
+);

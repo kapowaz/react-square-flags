@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.shared.json",
+  "compilerOptions": {
+    "declarationDir": "./compiled",
+    "emitDeclarationOnly": true,
+    "noEmit": false
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "src/components/**/*.test.tsx",
+    "src/components/**/*.stories.tsx",
+    "src/components/SquareFlag/utils.tsx"
+  ],
+  "include": ["src/*.ts", "src/components/**/*.ts", "src/components/**/*.tsx"]
+}

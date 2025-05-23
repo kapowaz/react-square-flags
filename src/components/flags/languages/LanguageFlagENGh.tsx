@@ -1,0 +1,8 @@
+import type { SVGComponent } from '../../../types';
+
+export const LanguageFlagENGh: SVGComponent = ({ title = 'Ghanaian English', ...props }) => (
+  <svg viewBox="0 0 512 512" role="img" {...props}>
+    {title && <title>{title}</title>}
+    <g clipPath="url(#flag-1x8j9ve)"><path fill="var(--flag-palette-yellow, #ffda44)" d="M384 136h512v240H384z"/><path fill="var(--flag-palette-dark-green, #496e2d)" d="M384 344h512v168H384z"/><path fill="var(--flag-palette-bright-red, #d80027)" d="M384 0h512v168H384z"/><path fill="var(--flag-palette-yellow, #ffda44)" d="M-128 136h512v240h-512z"/><path fill="var(--flag-palette-dark-green, #496e2d)" d="M-128 344h512v168h-512z"/><path fill="var(--flag-palette-bright-red, #d80027)" d="M-128 0h512v168h-512z"/><path fill="var(--flag-palette-black, #333333)" d="m128 167 22.1 68h71.5l-57.8 42 22 68-57.8-42-57.9 42 22.1-68-57.8-42h71.5z"/><path fill="var(--flag-palette-white, #eeeeee)" d="M512 0v512H16l176-176v-16l32-32h64v-64z"/><path fill="var(--flag-palette-blue, #0052b4)" d="M320 368v144h144zM48 512l144-144v144zm320-192 144 144V320zm144-128V48L368 192z"/><path fill="var(--flag-palette-bright-red, #d80027)" d="m288 224-64 64v224h64V288h224v-64z"/><path fill="var(--flag-palette-bright-red, #d80027)" d="M512 480 352 320h-32l192 192zM32 512l160-160v-32L0 512z"/></g><defs><clipPath id="flag-1x8j9ve"><path fill="#fff" d="M0 0h512v512H0z"/></clipPath></defs>
+  </svg>
+);

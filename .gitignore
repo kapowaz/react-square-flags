@@ -1,5 +1,11 @@
 node_modules
 coverage
 dist
+compiled
 .jest-cache
 .DS_Store
+.vscode/
+
+*storybook.log
+playwright-report/
+test-results/

@@ -1,0 +1,10 @@
+import type { SVGComponent, {{typeName}} } from '../../../types';
+{{#each componentNames}}
+import { {{this}} } from './{{this}}';
+{{/each}}
+
+export const {{exportName}}: Record<{{typeName}}, SVGComponent> = {
+{{#each componentsByCode}}
+  '{{@key}}': {{this}},
+{{/each}}
+};

@@ -1,12 +1,12 @@
-module.exports = {
+const config = {
   cacheDirectory: '<rootDir>/.jest-cache',
   preset: 'ts-jest',
-  setupFiles: ['./src/test/setupPromiseWarnings'],
+  testEnvironment: 'jsdom',
+  setupFiles: ['./src/test/jest/setupPromiseWarnings.ts'],
+  setupFilesAfterEnv: ['<rootDir>/src/test/jest/setupTests.ts'],
   transform: {
-    '^.+\\.tsx?$': 'babel-jest',
-    'node_modules/variables/.+\\.(j|t)sx?$': 'ts-jest',
+    '^.+\\.tsx?$': 'ts-jest',
   },
-  transformIgnorePatterns: ['node_modules/(?!variables/.*)'],
   watchPlugins: [
     'jest-watch-typeahead/filename',
     'jest-watch-typeahead/testname',
@@ -16,4 +16,7 @@ module.exports = {
     '<rootDir>/test-report.json',
   ],
   modulePathIgnorePatterns: ['<rootDir>/dist/'],
+  testPathIgnorePatterns: ['src/test/playwright'],
 };
+
+export default config;
