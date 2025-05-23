@@ -35,14 +35,12 @@
   "scripts": {
     "test": "NODE_ENV=test jest",
     "test:watch": "NODE_ENV=test jest --watch",
+    "test:playwright": "yarn playwright test",
     "lint": "eslint --ext .js,.ts src/",
     "lintervention": "lintervention",
     "lintervention:staged": "yarn lintervention --scope staged",
     "lintervention:branch": "yarn lintervention --scope branch",
     "typecheck": "tsc --emitDeclarationOnly false --noEmit",
-  },
-  "dependencies": {
-    "minimist": "^1.2.6"
     "clean": "rm -rf ./dist ./compiled",
     "build": "yarn clean && yarn build:ts && yarn build:js",
     "build:ts": "tsc -p ./tsconfig.build.json",
@@ -58,10 +56,10 @@
     "@docusaurus/eslint-plugin": "^3.7.0",
     "@eslint/eslintrc": "^3.3.1",
     "@eslint/js": "^9.26.0",
+    "@playwright/test": "^1.52.0",
     "@rollup/plugin-commonjs": "^28.0.3",
     "@rollup/plugin-node-resolve": "^16.0.1",
     "@semantic-release/git": "^10.0.1",
-    "@types/minimist": "^1.2.2",
     "@storybook/addon-essentials": "^8.6.14",
     "@storybook/addon-interactions": "^8.6.14",
     "@storybook/addon-styling-webpack": "^1.0.1",
@@ -86,6 +84,7 @@
     "jest-watch-typeahead": "^2.2.2",
     "jsdom": "^26.1.0",
     "lintervention": "^3.3.0",
+    "playwright": "^1.52.0",
     "prettier": "^3.5.1",
     "rollup": "^4.41.0",
     "rollup-plugin-dts": "^6.2.1",
@@ -99,6 +98,7 @@
     "typescript-eslint": "^8.32.1",
     "typescript-plugin-css-modules": "^5.1.0",
     "webpack": "^5"
+  },
   "eslintConfig": {
     "extends": [
       "plugin:storybook/recommended"
