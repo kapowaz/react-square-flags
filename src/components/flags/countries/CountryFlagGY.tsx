@@ -1,0 +1,8 @@
+import type { SVGComponent } from '../../../types';
+
+export const CountryFlagGY: SVGComponent = ({ title = 'Guyana', ...props }) => (
+  <svg viewBox="0 0 512 512" role="img" {...props}>
+    {title && <title>{title}</title>}
+    <path fill="var(--flag-palette-green, #6da544)" d="M0 0h512v512H0z"/><path fill="var(--flag-palette-yellow, #ffda44)" d="M512 256 0 512V0z"/><path fill="var(--flag-palette-white, #eeeeee)" d="M512 256 0 512v-28.6L454.8 256 0 28.6V0z"/><path fill="var(--flag-palette-bright-red, #d80027)" d="M256 256 0 512V0z"/><path fill="var(--flag-palette-black, #333333)" d="M256 256 0 512v-36.2L219.8 256 0 36.2V0z"/>
+  </svg>
+);

@@ -1,0 +1,8 @@
+import type { SVGComponent } from '../../../types';
+
+export const CountryFlagUSDc: SVGComponent = ({ title = 'District of Columbia', ...props }) => (
+  <svg viewBox="0 0 512 512" role="img" {...props}>
+    {title && <title>{title}</title>}
+    <path fill="var(--flag-palette-white, #eeeeee)" d="M0 0h512v512H0z"/><path fill="var(--flag-palette-bright-red, #d80027)" d="M0 186h512v96H0zm0 153h512v96H0zM93 29l14.4 44.2h46.5l-37.7 27.4 14.4 44.2L93 117.4l-37.6 27.4 14.4-44.2L32 73.2h46.5zm163 0 14.4 44.2h46.5l-37.7 27.4 14.4 44.2-37.6-27.4-37.6 27.4 14.4-44.2L195 73.2h46.5zm163 0 14.4 44.2h46.5l-37.7 27.4 14.4 44.2-37.6-27.4-37.6 27.4 14.4-44.2L358 73.2h46.5z"/>
+  </svg>
+);
