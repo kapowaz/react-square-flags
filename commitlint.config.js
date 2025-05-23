@@ -1,4 +1,4 @@
-module.exports = {
+const config = {
   extends: ['@commitlint/config-conventional'],
   rules: {
     'body-max-length': [0, 'always'],
@@ -11,3 +11,5 @@ module.exports = {
     'type-max-length': [0, 'always'],
   },
 };
+
+export default config;
